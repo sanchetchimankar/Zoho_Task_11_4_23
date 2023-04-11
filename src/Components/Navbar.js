@@ -156,7 +156,7 @@ export default function Navbar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static"  style={{ background: 'lightgrey' }}>
+      <AppBar position="static" style={{ background: 'lightgrey' }}>
         <Toolbar>
           {/* <IconButton
             size="large"
@@ -176,10 +176,10 @@ export default function Navbar() {
             MUI
           </Typography> */}
           <Name.Consumer>
-          {(fname) => {
-            return (<div style={{ color: 'black' }}>{fname}</div>) ;
-          }}
-        </Name.Consumer>
+            {(fname) => {
+              return (<div style={{ color: 'black' }}>{fname}</div>);
+            }}
+          </Name.Consumer>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
@@ -234,7 +234,7 @@ export default function Navbar() {
       {renderMobileMenu}
       {renderMenu}
 
-      
+
     </Box>
   );
 }

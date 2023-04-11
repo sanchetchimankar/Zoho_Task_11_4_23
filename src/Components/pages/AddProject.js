@@ -24,13 +24,13 @@ const AddProject = () => {
 
 	const [text, setText] = React.useState("");
 
-    const handleChange = event => {
-        setText(event.target.value);
-    };
+	const handleChange = event => {
+		setText(event.target.value);
+	};
 	return (
 
 		<div className="App">
-			
+
 			<h4 >Project Configuration Details</h4>
 			<Paper
 				sx={{
@@ -41,9 +41,9 @@ const AddProject = () => {
 					backgroundColor: (theme) =>
 						theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
 				}}
-			><br/>
+			><br />
 				<Grid container spacing={2}>
-				&nbsp;&nbsp;&nbsp;	<TextField
+					&nbsp;&nbsp;&nbsp;	<TextField
 						id="standard-basic"
 						required
 						variant="standard"
@@ -57,7 +57,7 @@ const AddProject = () => {
 				</Grid><br /><br />
 
 				<Grid container spacing={2}>
-				&nbsp;&nbsp;&nbsp;	<Box sx={{ minWidth: 120 }}>
+					&nbsp;&nbsp;&nbsp;	<Box sx={{ minWidth: 120 }}>
 						<FormControl fullWidth>
 							<InputLabel variant="standard" htmlFor="uncontrolled-native">
 								Client Name
@@ -81,7 +81,7 @@ const AddProject = () => {
 					</Box>
 				</Grid><br /><br />
 				<Grid container spacing={2}>
-				&nbsp;&nbsp;&nbsp;	<TextField
+					&nbsp;&nbsp;&nbsp;	<TextField
 						id="standard-basic"
 						type="number"
 						variant="standard"
@@ -92,9 +92,9 @@ const AddProject = () => {
 							},
 						}}
 					/>
-				</Grid><br/><br/>
+				</Grid><br /><br />
 				<Grid container spacing={2}>
-				&nbsp;&nbsp;&nbsp;	<Box sx={{ minWidth: 120 }}>
+					&nbsp;&nbsp;&nbsp;	<Box sx={{ minWidth: 120 }}>
 						<FormControl fullWidth>
 							<InputLabel variant="standard" htmlFor="uncontrolled-native">
 								Proeject Head
@@ -114,15 +114,15 @@ const AddProject = () => {
 								<option value={20}>Twenty</option>
 								<option value={30}>Thirty</option>
 							</NativeSelect>
-						
-							</FormControl>
-						
+
+						</FormControl>
+
 					</Box>
-				</Grid><br/><br/>
+				</Grid><br /><br />
 
 				<Grid container spacing={2}>
-				&nbsp;&nbsp;&nbsp;	<TextField
-						 id="outlined-number"
+					&nbsp;&nbsp;&nbsp;	<TextField
+						id="outlined-number"
 						type="number"
 						variant="standard"
 						label="Project Manager"
@@ -134,11 +134,11 @@ const AddProject = () => {
 					/>
 
 
-					
-				</Grid><br/><br/>
+
+				</Grid><br /><br />
 
 				<Grid container spacing={2}>
-				&nbsp;&nbsp;&nbsp;	<TextField
+					&nbsp;&nbsp;&nbsp;	<TextField
 						id="standard-basic"
 						type="number"
 						variant="standard"
@@ -149,10 +149,10 @@ const AddProject = () => {
 							},
 						}}
 					/>
-				</Grid><br/><br/>
+				</Grid><br /><br />
 				<Grid container spacing={2}>
-				&nbsp;&nbsp;&nbsp;	Description
-					<br/>
+					&nbsp;&nbsp;&nbsp;	Description
+					<br />
 					<TextareaAutosize
 						id="standard-basic"
 						type="text"
@@ -164,7 +164,7 @@ const AddProject = () => {
 							},
 						}}
 					/>
-					
+
 
 
 
@@ -173,8 +173,8 @@ const AddProject = () => {
 
 			</Paper>
 			<Box >
-			<Button variant="contained">Submit</Button>&nbsp;
-			<Button variant="outlined">Cancel</Button>
+				<Button variant="contained">Submit</Button>&nbsp;
+				<Button variant="outlined">Cancel</Button>
 			</Box>
 		</div>
 	);
